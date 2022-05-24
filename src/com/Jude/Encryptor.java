@@ -83,7 +83,7 @@ public class Encryptor extends JPanel {
     public static String decrypt(String str){
         String output="";
         int key = str.charAt(0)-96;
-        String newStr = str.substring(1); //fiya tkoun gher awwal letter
+        String newStr = str.substring(1); 
         for(int i =0;i<newStr.length();i++){
             if(newStr.charAt(i)<=122 && newStr.charAt(i)>=97){
                 int temp1 = newStr.charAt(i)-96;
